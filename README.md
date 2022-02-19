@@ -1,5 +1,7 @@
 # State of React uncontrolled forms in 2022
 
+![Preview](https://raw.githubusercontent.com/ThomasRutzer/State-of-React-uncontrolled-forms-in-2022/main/documentation/form.png)
+
 ## How to use
 
 Forms are the backbone of the web – still in 2022! So for a good start into the year, I decided to refresh my knowledge on the current state of web forms with React. It's actually quite nice what you can achieve easily with [uncontrolled React form components](https://reactjs.org/docs/uncontrolled-components.html) and [Constraint Validation API](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Constraint_validation). Use the platform and let the browser do most of the heavy lifting!
