@@ -1,0 +1,36 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 100vh;
+  background-image: linear-gradient(140deg, var(--color-accent-primary), var(--color-accent-secondary));
+  padding: 16px;
+}
+
+.form {
+  background-color: var(--color-dark);
+  width: 100%;
+  max-width: 960px;
+  border: 8px solid var(--color-light);
+  border-radius: var(--border-radius);
+  padding: 16px;
+  box-shadow: 0 1px 1px hsl(0deg 0% 0% / 0.075), 0 2px 2px hsl(0deg 0% 0% / 0.075), 0 4px 4px hsl(0deg 0% 0% / 0.075),
+    0 8px 8px hsl(0deg 0% 0% / 0.075), 0 16px 16px hsl(0deg 0% 0% / 0.075);
+}
+
+.submit {
+  margin-top: 8px;
+  width: 100%;
+}
+
+.requiredNote {
+  font-size: 0.75rem;
+  margin-top: 8px;
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    padding: 32px;
+  }
+}

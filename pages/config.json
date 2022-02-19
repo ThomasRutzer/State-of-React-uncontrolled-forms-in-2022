@@ -1,0 +1,87 @@
+{
+  "submitButtonLabel": "Submit",
+  "sections": [
+    {
+      "fields": [
+        {
+          "name": "firstName",
+          "label": "First Name",
+          "component": "TextInput",
+          "type": "text"
+        },
+        {
+          "name": "lastName",
+          "label": "Last Name",
+          "component": "TextInput",
+          "type": "text"
+        },
+        {
+          "name": "email",
+          "label": "Email",
+          "component": "TextInput",
+          "type": "email"
+        },
+        {
+          "name": "password",
+          "label": "Password",
+          "component": "PasswordInput"
+        },
+        {
+          "name": "termsAndCondition",
+          "label": "Please Accept our Terms & Conditions",
+          "component": "Checkbox"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "schema": {
+      "properties": {
+        "firstName": {
+          "type": "string",
+          "required": true
+        },
+        "lastName": {
+          "type": "string",
+          "required": true
+        },
+        "email": {
+          "type": "string",
+          "format": "email",
+          "required": true
+        },
+        "password": {
+          "type": "string",
+          "required": true
+        },
+        "termsAndCondition": {
+          "type": "boolean",
+          "required": true,
+          "oneOf": [
+            true
+          ]
+        }
+      }
+    },
+    "config": {
+      "errMessages": {
+        "firstName": {
+          "required": "Please add your First Name"
+        },
+        "lastName": {
+          "required": "Please add your Last Name"
+        },
+        "email": {
+          "required": "Please add your Email",
+          "format": "Email should be of correct format (e.g. name@domain.com)"
+        },
+        "password": {
+          "required": "Please add secure Password"
+        },
+        "termsAndCondition": {
+          "required": "Please accecpt"
+        }
+      }
+    }
+  }
+}

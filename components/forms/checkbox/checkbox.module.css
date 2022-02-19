@@ -1,0 +1,18 @@
+.form {
+  display: flex;
+  gap: 8px;
+}
+
+.input {
+  border-radius: var(--border-radius-smaller);
+}
+
+.input:focus {
+  outline: var(--focus-outline-width) solid var(--color-accent-primary);
+  outline-offset: var(--focus-outline-offset);
+}
+
+.input[aria-invalid="true"]:not(:focus) {
+  outline: var(--focus-outline-width) solid var(--color-accent-secondary);
+  outline-offset: var(--focus-outline-offset);
+}

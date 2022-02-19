@@ -1,0 +1,11 @@
+.container {
+  display: block;
+  min-height: 36px;
+  margin-top: 8px;
+  font-size: 0.75rem;
+  color: var(--color-accent-secondary);
+}
+
+.message {
+  display: block;
+}
